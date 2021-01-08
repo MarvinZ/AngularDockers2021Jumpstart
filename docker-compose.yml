@@ -7,5 +7,6 @@ services: # Here we define our service(s)
         - './angulardockerproject:/usr/src/app' 
       ports: 
         - '4200:4200' # Port mapping
+        - '49153:49153' #Live Reload
       command: > 
         bash -c "npm install && ng serve --host 0.0.0.0 --port 4200"

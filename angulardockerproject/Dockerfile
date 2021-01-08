@@ -8,3 +8,5 @@ WORKDIR /usr/src/app
 RUN npm install -g @angular/cli
 
 COPY . .
+
+EXPOSE 49153
